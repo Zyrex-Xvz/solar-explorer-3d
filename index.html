@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#03050b" />
+  <meta name="description"
+        content="Jelajahi tata surya dalam simulasi 3D interaktif." />
+  <title>Solar Explorer 3D</title>
+</head>
+<body>
+  <div id="app">
+    <div id="universe"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#">
+        <span class="brand-icon">✦</span>
+        <span>SOLAR <b>EXPLORER</b><small>DEEP SPACE EXPERIENCE</small></span>
+      </a>
+      <div class="live"><i></i> SOLAR SYSTEM</div>
+    </header>
+
+    <main class="interface">
+      <section class="hero">
+        <span class="eyebrow">INTERACTIVE COSMOS</span>
+        <h1>Beyond the <span>known.</span></h1>
+        <p>Jelajahi keajaiban tata surya dalam ruang tiga dimensi.</p>
+      </section>
+
+      <section class="planet-card glass">
+        <div class="card-heading">
+          <span class="eyebrow">PLANET DATABASE</span>
+          <span id="planet-index">03 / 08</span>
+        </div>
+        <h2 id="planet-name">Bumi</h2>
+        <p id="planet-desc">
+          Dunia biru yang menjadi rumah bagi kehidupan.
+        </p>
+        <div class="stats">
+          <div><small>DIAMETER</small><strong id="diameter">12.742 km</strong></div>
+          <div><small>JARAK MATAHARI</small><strong id="distance">149,6 juta km</strong></div>
+          <div><small>PERIODE ORBIT</small><strong id="period">365 hari</strong></div>
+          <div><small>SUHU RATA-RATA</small><strong id="temperature">15°C</strong></div>
+        </div>
+      </section>
+
+      <section class="planet-menu glass">
+        <span class="eyebrow">DESTINATIONS</span>
+        <div id="planet-list"></div>
+      </section>
+
+      <div class="bottom-controls glass">
+        <button id="zoom-out" aria-label="Perkecil">−</button>
+        <button id="focus-btn">◎ Fokus</button>
+        <button id="zoom-in" aria-label="Perbesar">+</button>
+        <button id="orbit-btn">Orbit ON</button>
+        <button id="speed-btn">Kecepatan 1×</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+
+      <div class="hint">GESER UNTUK MELIHAT SEKITAR · CUBIT UNTUK ZOOM</div>
+      <div class="loading" id="loading">
+        <div class="loader"></div>
+        <span>MENYIAPKAN TATA SURYA</span>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
